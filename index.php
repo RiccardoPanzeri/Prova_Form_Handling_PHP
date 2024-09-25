@@ -13,9 +13,9 @@
     <form action="pages/form_handler_GET.php" method="get" class="form">
             <div class="formDiv"> 
                 <label for="name" class="text">Nome</label>
-                <input type="text" name="name" placeholder="Nome" required>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
                 <label for="lastName" class="text">Cognome</label>
-                <input type="text" name="lastName" placeholder="Cognome" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Cognome" required>
                 <button type="submit">Conferma</button>
             </div>    
     </form>
@@ -25,15 +25,15 @@
     <form action="pages/form_handler_POST.php" method="Post">
             <div class="formDiv">
                 <label for="username" class="text">Nome Utente</label>
-                <input type="text" name="username" required>
+                <input type="text" id="username" name="username" required>
                 <label for="password" class="text">Password</label>
-                <input type="password" name="password" required>
+                <input type="password" id="password" name="password" required>
                 <p class="text">Sesso: </p>
                 <div class="genderDiv">
-                    <label for="gender" class="text">Maschio</label>
-                    <input type="radio" name="gender" value="Maschio" required>
-                    <label for="gender" class="text">Femmina</label>
-                    <input type="radio" name="gender" value="Femmina" required>
+                    <label for="male" class="text">Maschio</label>
+                    <input type="radio" id="male" name="gender" value="Maschio" required>
+                    <label for="female" class="text">Femmina</label>
+                    <input type="radio" name="gender"  id="female" value="Femmina" required>
                 </div>
                 <button type="submit">Conferma</button>
             </div>
